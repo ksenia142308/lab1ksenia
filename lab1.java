@@ -12,7 +12,7 @@ public class lab1 {
         int B = in.nextInt();
         int C = in.nextInt();
         int D = in.nextInt();
-        int countHole = 0; // инициализация счетчика подходящих отверстий
+        byte countHole = 0; // инициализация счетчика подходящих отверстий
         if (X<=A) {
             countHole+=1; // если (X<=A), то countHole++ . Если же нет, до далее условия проверятся не будут, счетчик выведет 0.
             if (X<=B) {
