@@ -99,16 +99,16 @@
 graph TD
     A([Начало]) --> B[/Ввести: X, A, B, C, D/]
     B --> C[countHole = 0]
-    C --> D{X <= A?}
+    C --> D{X <= A}
     D -- Нет --> Z[/Вывод: countHole/]
     D -- Да --> E[countHole++]
-    E --> F{X <= B?}
+    E --> F{X <= B}
     F -- Нет --> Z
     F -- Да --> G[countHole++]
-    G --> H{X <= C?}
+    G --> H{X <= C}
     H -- Нет --> Z
     H -- Да --> I[countHole++]
-    I --> J{X <= D?}
+    I --> J{X <= D}
     J -- Нет --> Z
     J -- Да --> K[countHole++]
     K --> Z
@@ -226,4 +226,15 @@ public class lab1 {
     - **Output**:
         ```
         4
+        ```
+6. Тест на остановку после 1 отверстия:
+
+    - **Input**:
+        ```
+        4 7 1 8 6
+        ```
+
+    - **Output**:
+        ```
+        1
         ```
